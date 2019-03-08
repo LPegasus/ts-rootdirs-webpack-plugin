@@ -1,0 +1,28 @@
+{
+  "name": "ts-rootdirs-webpack-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.10.5",
+    "@types/webpack": "^4.4.25",
+    "typescript": "^3.3.3333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LPegasus/ts-rootdirs-webpack-plugin.git"
+  },
+  "dependencies": {
+    "enhanced-resolve": "^4.1.0",
+    "tsconfig": "^7.0.0"
+  },
+  "files": [
+    "lib/"
+  ]
+}
