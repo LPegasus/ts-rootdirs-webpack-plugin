@@ -83,7 +83,7 @@ export default class TypeScriptRootDirsWebpackResolverPlugin
 
     const fileExistsWithExtensionAppend = (p: string) =>
       PromiseAny(
-        [p].concat([this.extensions].map(d => p + d)).map(d => fileExists(d))
+        [p].concat([...this.extensions].map(d => p + d)).map(d => fileExists(d))
       ).catch(() => false);
 
     resolver.getHook('described-resolve').tapAsync(
